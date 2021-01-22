@@ -25,7 +25,21 @@ figure {
   padding: 0;
 }
 
-header,
-main {
+header {
   padding: 0 16px;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+main figure {
+  flex: 1 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  main figure {
+    flex: 1 50%;
+  }
 }
